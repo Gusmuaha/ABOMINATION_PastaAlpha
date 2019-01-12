@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="663.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.TeamViewController">
+  <children>
+    <Button fx:id="backButton" defaultButton="false" layoutX="598.0" layoutY="9.0" mnemonicParsing="false" onAction="#exitStage" prefHeight="42.0" prefWidth="42.0" text="" visible="true" />
+    <Label layoutX="14.0" layoutY="37.0" text="Team information:">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Label>
+    <ImageView id="backButton" fitHeight="42.0" fitWidth="42.0" layoutX="598.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../resources/icons8-undo-80.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="601.0" layoutY="56.0" text="Back" />
+    <Text fx:id="printable" layoutX="178.0" layoutY="229.0" scaleX="11.964342824544904" scaleY="21.348767274131347" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+  </children>
+</AnchorPane>

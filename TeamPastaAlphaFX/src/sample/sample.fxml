@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="429.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.MainController">
+  <children>
+    <SplitPane dividerPositions="0.40302267002518893" focusTraversable="true" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="427.0">
+          <children>
+            <Button fx:id="showTeamMembers" layoutX="270.0" layoutY="49.0" mnemonicParsing="false" onAction="#showTeamMembers" text="Show" />
+            <Label layoutX="27.0" layoutY="54.0" prefWidth="236.0" text="Show all team members" />
+            <Label layoutX="27.0" layoutY="86.0" prefWidth="196.0" text="Show Project information" />
+            <Label layoutX="27.0" layoutY="118.0" prefWidth="170.0" text="Search for team member" />
+            <Button layoutX="270.0" layoutY="83.0" mnemonicParsing="false" text="Show" />
+            <Button layoutX="270.0" layoutY="116.0" mnemonicParsing="false" text="Show" />
+            <Label layoutX="14.0" layoutY="14.0" text="Project Information:">
+              <font>
+                <Font name="System Bold" size="15.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Button id="ImportJSON" fx:id="ImportJson" layoutX="248.0" layoutY="8.0" mnemonicParsing="false" onAction="#ImportJSON" text="Import JSON" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <Label font="$x1" layoutX="143.0" layoutY="14.0" text="Project Analysis:" />
+            <Label layoutX="26.0" layoutY="41.0" text="Cost Variance" />
+            <Label layoutX="153.0" layoutY="41.0" text="Schedule Variance" textAlignment="CENTER" />
+            <Label layoutX="320.0" layoutY="41.0" text="Earned Value" />
+            <Button layoutX="318.0" layoutY="172.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="91.0" text="Show" />
+            <ImageView fitHeight="73.0" fitWidth="73.0" layoutX="326.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../resources/icons8-money-80.png" />
+              </image>
+            </ImageView>
+            <ImageView fitHeight="91.0" fitWidth="91.0" layoutX="168.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../resources/icons8-line-chart-80.png" />
+              </image>
+            </ImageView>
+            <ImageView fitHeight="91.0" fitWidth="91.0" layoutX="26.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../resources/icons8-statistics-80.png" />
+              </image>
+            </ImageView>
+            <Button layoutX="169.0" layoutY="172.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="91.0" text="Show" />
+            <Button layoutX="26.0" layoutY="172.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="91.0" text="Show" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
